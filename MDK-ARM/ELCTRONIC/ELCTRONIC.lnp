@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"elctronic\startup_stm32f103xb.o"
+"elctronic\main.o"
+"elctronic\gpio.o"
+"elctronic\tim.o"
+"elctronic\stm32f1xx_it.o"
+"elctronic\stm32f1xx_hal_msp.o"
+"elctronic\stm32f1xx_hal_gpio_ex.o"
+"elctronic\stm32f1xx_hal_tim.o"
+"elctronic\stm32f1xx_hal_tim_ex.o"
+"elctronic\stm32f1xx_hal.o"
+"elctronic\stm32f1xx_hal_rcc.o"
+"elctronic\stm32f1xx_hal_rcc_ex.o"
+"elctronic\stm32f1xx_hal_gpio.o"
+"elctronic\stm32f1xx_hal_dma.o"
+"elctronic\stm32f1xx_hal_cortex.o"
+"elctronic\stm32f1xx_hal_pwr.o"
+"elctronic\stm32f1xx_hal_flash.o"
+"elctronic\stm32f1xx_hal_flash_ex.o"
+"elctronic\stm32f1xx_hal_exti.o"
+"elctronic\system_stm32f1xx.o"
+--strict --scatter "ELCTRONIC\ELCTRONIC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ELCTRONIC.map" -o ELCTRONIC\ELCTRONIC.axf
